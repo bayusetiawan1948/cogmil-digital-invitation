@@ -1,0 +1,8 @@
+@tailwind base;
+.text-stroke {
+  -webkit-text-fill-color: #ffe5ca;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e74646;
+}
+@tailwind components;
+@tailwind utilities;
