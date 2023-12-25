@@ -4,5 +4,25 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e74646;
 }
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fa9884;
+  transform-origin: bottom;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fa9884;
+  transform-origin: top;
+}
 @tailwind components;
 @tailwind utilities;

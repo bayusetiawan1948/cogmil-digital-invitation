@@ -1,8 +1,11 @@
 import React from 'react';
-import ranting from '../assets/image/ranting.png';
+import ranting from '../assets/image/ranting.webp';
 import { useParams } from 'react-router-dom';
-export default function PostCard() {
+import transition from '../transition';
+
+function PostCard() {
   const { name } = useParams();
+  console.log(name);
   const nameParticipant =
     name !== undefined ? name.charAt(0).toUpperCase() + name.slice(1) : 'You';
   const redirect = () => {
@@ -18,7 +21,7 @@ export default function PostCard() {
             suka cita, serta nantikan tahun baru yang lebih baik bersama-sama.
           </p>
         </div>
-        <div className="w-max">
+        <div className="w-screen flex justify-center">
           <img src={ranting} alt="" />
         </div>
         <button
@@ -31,3 +34,5 @@ export default function PostCard() {
     </div>
   );
 }
+
+export default transition(PostCard);
