@@ -73,7 +73,7 @@ function DigitalInvitation() {
           <hr className="h-0.5 w-full bg-secondary border-0 rounded" />
         </div>
         <a
-          className="underline mt-8 select-none"
+          className="underline mt-8 select-none cursor-pointer"
           onClick={() => history.back()}
         >
           Kembali

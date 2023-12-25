@@ -8,12 +8,12 @@ import DigitalInvitation from './pages/DigitalInvitation';
 
 const router = createBrowserRouter([
   {
-    path: '/invitation',
-    element: <DigitalInvitation />,
+    path: '/',
+    element: <PostCard />,
   },
   {
-    path: '/:name?',
-    element: <PostCard />,
+    path: '/invitation',
+    element: <DigitalInvitation />,
   },
 ]);
 
